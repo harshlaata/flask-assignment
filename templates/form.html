@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+</head>
+<body>
+    <h2>Enter Details</h2>
+    
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        Name: <input type="text" name="name"><br><br>
+        Age: <input type="text" name="age"><br><br>
+        City: <input type="text" name="city"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
